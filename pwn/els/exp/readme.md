@@ -1,0 +1,7 @@
+
+放到/tmp
+先leak拿到程序基址
+在exp通过fsb改写maxscore
+消除一行方块后触发
+结束后maxscore写入文件
+再次打开游戏即可getshell

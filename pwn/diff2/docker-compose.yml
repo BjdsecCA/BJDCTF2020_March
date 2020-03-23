@@ -1,0 +1,10 @@
+version: '3'
+services:
+  diff2:
+    image: taqini/bjd_diff2
+    build: .
+    ports: 
+     - "9999:22"
+    volumes:
+     - "$PWD/flag:/home/ctf/flag"
+

@@ -1,0 +1,12 @@
+version: '3'
+services:
+  rci:
+    image: taqini/bjd_rci
+    build: .
+    ports: 
+     - "10004:9999"
+  bak:
+    image: taqini/bjd_rci
+    build: .
+    ports: 
+     - "10104:9999"
