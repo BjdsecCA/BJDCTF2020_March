@@ -1,0 +1,9 @@
+version: '3'
+services:
+  rci:
+    image: taqini/bjd_rci_dyn
+    build: .
+    ports: 
+     - "9999:8888"
+    volumes:
+     - "$PWD/flag:/home/ctf/flag"

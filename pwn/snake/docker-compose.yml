@@ -1,0 +1,29 @@
+version: '3'
+services:
+  snake:
+    image: taqini/bjd_snake
+    build: .
+    ports: 
+     - "10002:22"
+    volumes:
+    # override file below if need
+     - ./file/bin:/home/ctf
+     - ./file/config/motd:/etc/motd:ro
+     - ./file/config/issue:/etc/issue:ro
+     - ./file/config/legal:/etc/legal:ro
+     - ./file/config/motd.dynamic:/var/run/motd.dynamic:ro
+     - ./file/config/sshd_config:/etc/ssh/sshd_config:ro
+  bak:
+    image: taqini/bjd_snake
+    build: .
+    ports: 
+     - "10102:22"
+    volumes:
+    # override file below if need
+     - ./file/bin:/home/ctf
+     - ./file/config/motd:/etc/motd:ro
+     - ./file/config/issue:/etc/issue:ro
+     - ./file/config/legal:/etc/legal:ro
+     - ./file/config/motd.dynamic:/var/run/motd.dynamic:ro
+     - ./file/config/sshd_config:/etc/ssh/sshd_config:ro
+

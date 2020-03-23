@@ -1,0 +1,10 @@
+version: '3'
+services:
+  one_gadget:
+    image: taqini/bjd_one_gadget
+    build: .
+    ports: 
+     - "9999:8888"
+    volumes:
+     - "$PWD/flag:/home/ctf/flag"
+

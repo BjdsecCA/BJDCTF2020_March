@@ -1,0 +1,9 @@
+version: '3'
+services:
+  rsa0:
+    image: taqini/bjd_rsa0
+    build: .
+    ports:
+     - "9999:8888"
+    volumes:
+     - "$PWD/flag:/home/ctf/flag"

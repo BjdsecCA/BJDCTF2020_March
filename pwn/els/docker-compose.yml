@@ -1,0 +1,10 @@
+version: '2'
+services:
+  els:
+    build: .
+    image: taqini/bjd_els
+    ports: 
+     - "9999:22"
+    volumes:
+     - "$PWD/flag:/home/ctf/flag"
+

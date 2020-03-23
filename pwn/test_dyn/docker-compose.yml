@@ -1,0 +1,10 @@
+version: '3'
+services:
+  test:
+    image: taqini/bjd_test_dyn
+    build: .
+    ports: 
+     - "9999:22"
+    volumes:
+     - "$PWD/flag:/home/ctf/flag"
+

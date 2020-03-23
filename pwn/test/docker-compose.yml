@@ -1,0 +1,9 @@
+version: '3'
+services:
+  test:
+    image: taqini/bjd_test
+    build: .
+    ports: 
+     - "10002:22"
+    volumes:
+
